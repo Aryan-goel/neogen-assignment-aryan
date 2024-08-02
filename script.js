@@ -95,10 +95,10 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.to(stars.position, {
       x: targetPosition.x,
       y: targetPosition.y,
-      duration: 3.5,
-      ease: "power2.out",
+      duration: 1.5,
+      ease: "bounce.out",
       onComplete: () => {
-        gsap.to(stars.rotation, { y: Math.PI * 1.25, duration: 20, ease: "none", repeat: -1 });
+        gsap.to(stars.rotation, { y: Math.PI * -1.25, duration: 20, ease: "none", repeat: -1 });
       }
     });
 
